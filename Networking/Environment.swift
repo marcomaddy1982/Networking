@@ -1,12 +1,12 @@
 //
 //  Environment.swift
-//  IntiveDiscovery
+//  Networking
 //
 //  Created by Marco Maddalena on 27.02.18.
 //  Copyright © 2018 Intive. All rights reserved.
 //
 
-struct Environment {
+public struct Environment {
 
     /// Base URL of the environment
     public var host: String

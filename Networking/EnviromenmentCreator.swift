@@ -1,6 +1,6 @@
 //
 //  EnviromenmentCreator.swift
-//  IntiveDiscovery
+//  Networking
 //
 //  Created by Marco Maddalena on 27.02.18.
 //  Copyright © 2018 Intive. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Endpoint: String {
+public enum Endpoint: String {
     case dev
     case prod
 
@@ -41,9 +41,9 @@ enum Endpoint: String {
     }
 }
 
-final class EnvironmentCreator {
+public final class EnvironmentCreator {
     
-    static func environment(for endpoint: Endpoint) -> Environment {
+    public static func environment(for endpoint: Endpoint) -> Environment {
         return Environment(host: endpoint.baseURL)
     }
 }

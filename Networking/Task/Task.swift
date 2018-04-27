@@ -1,6 +1,6 @@
 //
 //  Task.swift
-//  IntiveDiscovery
+//  Networking
 //
 //  Created by Marco Maddalena on 19.02.18.
 //  Copyright © 2018 Intive. All rights reserved.
@@ -8,18 +8,18 @@
 
 import Foundation
 
-enum TaskState: Int {
+public enum TaskState: Int {
     case none
     case pending
     case done
 }
 
-enum TaskResult<T, NetworkError> {
+public enum TaskResult<T, NetworkError> {
     case data(T)
     case error(NetworkError)
 }
 
-protocol Task: class {
+public protocol Task: class {
     associatedtype Output
 
     typealias Handler = (TaskResult<Output, NetworkError>) -> Void

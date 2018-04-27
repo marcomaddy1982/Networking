@@ -18,7 +18,6 @@
 		28336F3120932C7600A86B34 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28336F2720932C7500A86B34 /* Request.swift */; };
 		28336F3220932C7600A86B34 /* JSONTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28336F2920932C7600A86B34 /* JSONTask.swift */; };
 		28336F3320932C7600A86B34 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28336F2A20932C7600A86B34 /* Task.swift */; };
-		28336F3420932C7600A86B34 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 28336F2B20932C7600A86B34 /* Networking.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		28336F2720932C7500A86B34 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		28336F2920932C7600A86B34 /* JSONTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTask.swift; sourceTree = "<group>"; };
 		28336F2A20932C7600A86B34 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		28336F2B20932C7600A86B34 /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Networking.h; path = ../../../../Desktop/Networking/Networking/Networking.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 				28336F0B20932C3C00A86B34 /* Networking.h */,
 				28336F2520932C7500A86B34 /* EnviromenmentCreator.swift */,
 				28336F2220932C7500A86B34 /* Environment.swift */,
-				28336F2B20932C7600A86B34 /* Networking.h */,
 				28336F2720932C7500A86B34 /* Request.swift */,
 				28336F2420932C7500A86B34 /* RequestDispatcher.swift */,
 				28336F2620932C7500A86B34 /* Response.swift */,
@@ -128,7 +125,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28336F3420932C7600A86B34 /* Networking.h in Headers */,
 				28336F1920932C3D00A86B34 /* Networking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

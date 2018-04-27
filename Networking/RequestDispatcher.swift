@@ -1,6 +1,6 @@
 //
 //  URLRequestDispatcher.swift
-//  IntiveDiscovery
+//  Networking
 //
 //  Created by Marco Maddalena on 19.02.18.
 //  Copyright © 2018 Intive. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Dispatcher {
+public protocol Dispatcher {
     /// Configure the dispatcher with an environment
     ///
     /// - Parameter environment: environment configuration
@@ -22,15 +22,15 @@ protocol Dispatcher {
     func execute<T: Task>(task: T, handler: @escaping (_ response: Response) -> Void) throws
 }
 
-class RequestDispatcher: Dispatcher {
+public class RequestDispatcher: Dispatcher {
     let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
     let environment: Environment
 
-    required init(environment: Environment) {
+    public required init(environment: Environment) {
         self.environment = environment
     }
 
-    func execute<T: Task>(task: T, handler: @escaping (_ response: Response) -> Void) throws {
+    public func execute<T: Task>(task: T, handler: @escaping (_ response: Response) -> Void) throws {
         let requestBuilder: URLRequestBuilding = URLRequestBuilder(environment: environment)
         guard let request = try requestBuilder.urlRequest(withRequest: task.request) else {
             return

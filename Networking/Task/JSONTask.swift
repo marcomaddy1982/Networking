@@ -1,6 +1,6 @@
 //
 //  JSONTask.swift
-//  IntiveDiscovery
+//  Networking
 //
 //  Created by Marco Maddalena on 19.02.18.
 //  Copyright © 2018 Intive. All rights reserved.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol JSONTask: Task where Output: Decodable { }
+public protocol JSONTask: Task where Output: Decodable { }
 
-extension JSONTask {
+public extension JSONTask {
     func execute(in dispatcher: Dispatcher, handler: @escaping Handler) {
         do {
             try dispatcher.execute(task: self) {

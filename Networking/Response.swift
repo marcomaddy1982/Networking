@@ -1,6 +1,6 @@
 //
 //  Response.swift
-//  IntiveDiscovery
+//  Networking
 //
 //  Created by Marco Maddalena on 19.02.18.
 //  Copyright © 2018 Intive. All rights reserved.
