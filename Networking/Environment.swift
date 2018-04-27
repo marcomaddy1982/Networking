@@ -18,7 +18,6 @@ public struct Environment {
     /// Initialize a new Environment
     ///
     /// - Parameters:
-    ///   - name: name of the environment
     ///   - host: base url
     public init(host: String) {
         self.host = host
