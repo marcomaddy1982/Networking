@@ -12,28 +12,8 @@ public enum Endpoint: String {
     case dev
     case prod
 
-    private var apiId: String {
-        return "8za88ovv82"
-    }
-    
-    private var action: String {
-        return "execute-api"
-    }
-    
-    private var awsRegion: String {
-        return "eu-central-1"
-    }
-    
-    private var stage: String {
-        return self.rawValue
-    }
-    
-    private var awsBase: String {
-        return "amazonaws.com"
-    }
-    
     fileprivate var baseURL: String {
-        return "https://\(apiId).\(action).\(awsRegion).\(awsBase)/\(stage)"
+        return "https://api.exchangeratesapi.io"
     }
 
     fileprivate var headers: [String: String] {
